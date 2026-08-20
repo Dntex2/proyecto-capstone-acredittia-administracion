@@ -1,1 +1,1 @@
-# proyecto-capstone-bancario-grupo5
+# proyecto-capstone-acreditti-administracion
