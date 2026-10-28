@@ -11,6 +11,9 @@ consola interna de administración, suscripciones, pagos y control de morosidad.
 ![Pruebas](https://img.shields.io/badge/pruebas-339%20aprobadas-2E7D32)
 ![Requerimientos](https://img.shields.io/badge/requerimientos-9%20de%2015-F9A825)
 ![Stack](https://img.shields.io/badge/stack-FastAPI%20%C2%B7%20PostgreSQL%20%C2%B7%20Next.js-2B41B5)
+![Despliegue](https://img.shields.io/badge/despliegue-Azure%20%C2%B7%20Vercel-0078D4)
+
+**[Ver la plataforma en línea](https://acredittia-administracion.vercel.app)**
 
 </div>
 
@@ -24,6 +27,7 @@ consola interna de administración, suscripciones, pagos y control de morosidad.
 - [Documentos por fase](#documentos-por-fase)
 - [Estructura del repositorio](#estructura-del-repositorio)
 - [Tecnologías](#tecnologías)
+- [Despliegue](#despliegue)
 - [Evidencias del MVP](#evidencias-del-mvp)
 - [Repositorios](#repositorios)
 
@@ -89,7 +93,7 @@ pasa la suite de pruebas.
 | H0 | S4 | Propuesta del proyecto aprobada | ✅ Cumplido |
 | H1 | S6 | Modelo de datos extendido y migrado | ✅ Cumplido |
 | H2 | S9 | MVP desplegado (Hito 1 del mandante) | ✅ Cumplido (publicado con Ngrok) |
-| H3 | S11 | Plataforma en Docker y desplegada en la nube | 🔄 Docker listo; Azure y Vercel pendientes |
+| H3 | S11 | Plataforma en Docker y desplegada en la nube | ✅ Cumplido (backend en Azure, frontend en Vercel) |
 | H4 | S13 | Sistema integrado y probado | ⏳ Pendiente |
 | H5 | S15 | Proyecto documentado (Hito 3 del mandante) | ⏳ Pendiente |
 | H6 | S18 | Proyecto presentado | ⏳ Pendiente |
@@ -101,6 +105,7 @@ pasa la suite de pruebas.
 - **Suscripciones y pagos:** ciclo prueba, activa, morosa y cancelada; facturas en UF; solo lectura tras 7 días de gracia; pasarela de pago simulada.
 - **Consola interna:** resumen global, empresas, cobranza, salud de clientes, usuarios, auditoría, accesos, buscador, indicadores y sistemas.
 - **Calidad:** 339 pruebas automatizadas aprobadas, 65 de ellas de los módulos propios.
+- **Despliegue en la nube:** backend en Azure Container Apps y frontend en Vercel, con datos de demostración cargados.
 
 ---
 
@@ -154,8 +159,23 @@ proyecto-capstone-acredittia-administracion/
 | Base de datos | PostgreSQL 16 con seguridad a nivel de fila (RLS) · scripts SQL versionados |
 | Trabajos programados | Celery · Redis |
 | Frontend | Next.js 14 · React · TypeScript · Tailwind CSS |
-| Entorno y despliegue | Docker Compose (7 servicios) · Ngrok · Azure Container Apps y Vercel (previsto) |
+| Entorno y despliegue | Docker Compose (7 servicios) · Azure Container Apps · Vercel · Ngrok (MVP) |
 | Pruebas | pytest |
+
+---
+
+## Despliegue
+
+| Componente | Plataforma | Dirección |
+|---|---|---|
+| Frontend (portal y consola) | Vercel | [acredittia-administracion.vercel.app](https://acredittia-administracion.vercel.app) · consola en [`/ops/login`](https://acredittia-administracion.vercel.app/ops/login) |
+| API, trabajos programados y base de datos | Azure Container Apps · Azure Database for PostgreSQL · Redis | Se accede a través del frontend |
+
+El frontend reenvía las llamadas a la API desde su mismo dominio, así que el navegador solo habla con Vercel. La infraestructura
+de Azure se crea y actualiza con scripts del repositorio de código, y los datos de demostración se cargan con un job.
+
+> Para no consumir el crédito de Azure for Students, el backend se apaga entre demostraciones. Si la plataforma no responde,
+> es porque está apagada; se enciende antes de cada revisión.
 
 ---
 
