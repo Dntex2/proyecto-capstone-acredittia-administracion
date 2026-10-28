@@ -110,21 +110,18 @@ pasa la suite de pruebas.
 
 | Documento | Ubicación |
 |---|---|
-| Informe del proyecto | [`FASE 1/01_Informe_y_Guia`](FASE%201/01_Informe_y_Guia) |
-| Guía 1.5 · Definición del proyecto APT | [`FASE 1/01_Informe_y_Guia`](FASE%201/01_Informe_y_Guia) |
-| Autoevaluaciones (1.1) y diarios de reflexión (1.2) | [`FASE 1/02_Autoevaluaciones_y_Diarios`](FASE%201/02_Autoevaluaciones_y_Diarios) |
-| Presentación | [`FASE 1/03_Presentacion`](FASE%201/03_Presentacion) |
+| Autoevaluación de competencias (1.1) y diario de reflexión (1.2), por integrante | [`Fase 1/Evidencias Individuales`](Fase%201/Evidencias%20Individuales) |
+| Presentación, Guía 1.5 e informe del proyecto | [`Fase 1/Evidencias Grupales`](Fase%201/Evidencias%20Grupales) |
 
 ### Fase 2 · Desarrollo del proyecto
 
 | Documento | Tipo | Ubicación |
 |---|---|---|
-| Informe de avance Fase 2 | Grupal | [`FASE 2/01_Informe_y_Guia`](FASE%202/01_Informe_y_Guia) |
-| Guía 2.4 · Desarrollo del proyecto APT | Grupal | [`FASE 2/01_Informe_y_Guia`](FASE%202/01_Informe_y_Guia) |
-| Diario de reflexión 2.1 | Grupal | [`FASE 2/02_Diario_Reflexion_Grupal`](FASE%202/02_Diario_Reflexion_Grupal) |
-| Autoevaluación 2.2 | Individual | [`FASE 2/03_Autoevaluaciones`](FASE%202/03_Autoevaluaciones) |
-| Presentación del avance | Grupal | [`FASE 2/04_Presentacion`](FASE%202/04_Presentacion) |
-| Capturas del MVP e informe de avances del Hito 1 | Evidencias | [`FASE 2/05_Avances_y_Evidencias`](FASE%202/05_Avances_y_Evidencias) |
+| Diario de reflexión 2.1 y autoevaluación 2.2 | Individual | [`Fase 2/Evidencias Individuales`](Fase%202/Evidencias%20Individuales) |
+| Guía 2.4, informe de avance y diario grupal | Grupal | [`Fase 2/Evidencias Grupales`](Fase%202/Evidencias%20Grupales) |
+| Presentación del proyecto | Proyecto | [`Fase 2/Evidencias Proyecto`](Fase%202/Evidencias%20Proyecto) |
+| Informe de avances del Hito 1 y documentación de la API | Proyecto | [`Fase 2/Evidencias Proyecto/Evidencias de documentación`](Fase%202/Evidencias%20Proyecto/Evidencias%20de%20documentaci%C3%B3n) |
+| Capturas de la aplicación y del modelo de datos | Proyecto | [`Fase 2/Evidencias Proyecto/Evidencias de sistema`](Fase%202/Evidencias%20Proyecto/Evidencias%20de%20sistema) |
 
 ---
 
@@ -132,16 +129,18 @@ pasa la suite de pruebas.
 
 ```text
 proyecto-capstone-acredittia-administracion/
-├── FASE 1/
-│   ├── 01_Informe_y_Guia/                 Informe del proyecto y Guía 1.5
-│   ├── 02_Autoevaluaciones_y_Diarios/     Una carpeta por integrante
-│   └── 03_Presentacion/
-├── FASE 2/
-│   ├── 01_Informe_y_Guia/                 Informe de avance y Guía 2.4
-│   ├── 02_Diario_Reflexion_Grupal/        Diario 2.1
-│   ├── 03_Autoevaluaciones/               Autoevaluación 2.2, una carpeta por integrante
-│   ├── 04_Presentacion/
-│   └── 05_Avances_y_Evidencias/           Capturas del MVP e informe de avances del Hito 1
+├── Fase 1/
+│   ├── Evidencias Individuales/           Apellido_Nombre_1.x_APT122_...
+│   └── Evidencias Grupales/               Presentación, Guía 1.5 e informe
+├── Fase 2/
+│   ├── Evidencias Individuales/           Apellido_Nombre_2.x_APT122_...
+│   ├── Evidencias Grupales/               Guía 2.4, informe de avance y diario grupal
+│   └── Evidencias Proyecto/
+│       ├── Presentación Proyecto.pptx
+│       ├── Evidencias de documentación/
+│       └── Evidencias de sistema/
+│           ├── Aplicación/
+│           └── Base de datos/
 └── README.md
 ```
 
@@ -164,12 +163,12 @@ proyecto-capstone-acredittia-administracion/
 
 | Consola: resumen global | Consola: suscripciones y pagos |
 |---|---|
-| ![Resumen global](FASE%202/05_Avances_y_Evidencias/01_consola_resumen.png) | ![Suscripciones y pagos](FASE%202/05_Avances_y_Evidencias/03_consola_suscripciones.png) |
+| ![Resumen global](Fase%202/Evidencias%20Proyecto/Evidencias%20de%20sistema/Aplicaci%C3%B3n/01_consola_resumen.png) | ![Suscripciones y pagos](Fase%202/Evidencias%20Proyecto/Evidencias%20de%20sistema/Aplicaci%C3%B3n/03_consola_suscripciones.png) |
 | **Consola: auditoría** | **Portal: empresa morosa** |
-| ![Auditoría](FASE%202/05_Avances_y_Evidencias/04_consola_auditoria.png) | ![Portal de una empresa morosa](FASE%202/05_Avances_y_Evidencias/05_portal_suscripcion.png) |
+| ![Auditoría](Fase%202/Evidencias%20Proyecto/Evidencias%20de%20sistema/Aplicaci%C3%B3n/04_consola_auditoria.png) | ![Portal de una empresa morosa](Fase%202/Evidencias%20Proyecto/Evidencias%20de%20sistema/Aplicaci%C3%B3n/05_portal_suscripcion.png) |
 
 Las demás capturas (empresas, documentación de la API, modelo de datos y pruebas) están en
-[`FASE 2/05_Avances_y_Evidencias`](FASE%202/05_Avances_y_Evidencias).
+[`Fase 2/Evidencias Proyecto`](Fase%202/Evidencias%20Proyecto).
 
 ---
 
