@@ -146,7 +146,7 @@ pasa la suite de pruebas.
 |---|---|---|
 | Diario de reflexión 2.1 y autoevaluación 2.2 | Individual | [`Fase 2/Evidencias Individuales`](Fase%202/Evidencias%20Individuales) |
 | Guía 2.4, Guía 2.6, informe de avance, informe final y diario grupal | Grupal | [`Fase 2/Evidencias Grupales`](Fase%202/Evidencias%20Grupales) |
-| Presentación del proyecto | Proyecto | [`Fase 2/Evidencias Proyecto`](Fase%202/Evidencias%20Proyecto) |
+| Presentaciones de avance y sumativa final | Proyecto | [`Fase 2/Evidencias Proyecto`](Fase%202/Evidencias%20Proyecto) |
 | Informe de avances del Hito 1 (al 15 de octubre) y documentación de la API | Proyecto | [`Fase 2/Evidencias Proyecto/Evidencias de documentación`](Fase%202/Evidencias%20Proyecto/Evidencias%20de%20documentaci%C3%B3n) |
 | Capturas de la aplicación y del modelo de datos | Proyecto | [`Fase 2/Evidencias Proyecto/Evidencias de sistema`](Fase%202/Evidencias%20Proyecto/Evidencias%20de%20sistema) |
 
@@ -163,7 +163,8 @@ proyecto-capstone-acredittia-administracion/
 │   ├── Evidencias Individuales/           Apellido_Nombre_2.x_APT122_...
 │   ├── Evidencias Grupales/               Guías 2.4 y 2.6, informes de avance y final, diario grupal
 │   └── Evidencias Proyecto/
-│       ├── Presentación Proyecto.pptx
+│       ├── Presentación Proyecto.pptx            Avance (15 de octubre)
+│       ├── Presentación Sumativa Final Fase 2.pptx
 │       ├── Evidencias de documentación/
 │       └── Evidencias de sistema/
 │           ├── Aplicación/
