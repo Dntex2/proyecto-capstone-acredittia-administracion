@@ -24,7 +24,7 @@ consola interna de administración, suscripciones, pagos y control de morosidad.
 - [Equipo](#equipo)
 - [El proyecto](#el-proyecto)
 - [Estado del avance](#estado-del-avance)
-- [Documentos por fase](#documentos-por-fase)
+- [Documentos por fase](#documentos-por-fase) · [video de la presentación](#fase-3--presentación-final)
 - [Estructura del repositorio](#estructura-del-repositorio)
 - [Tecnologías](#tecnologías)
 - [Despliegue](#despliegue)
@@ -150,6 +150,16 @@ pasa la suite de pruebas.
 | Informe de avances del Hito 1 (al 15 de octubre) y documentación de la API | Proyecto | [`Fase 2/Evidencias Proyecto/Evidencias de documentación`](Fase%202/Evidencias%20Proyecto/Evidencias%20de%20documentaci%C3%B3n) |
 | Capturas de la aplicación y del modelo de datos | Proyecto | [`Fase 2/Evidencias Proyecto/Evidencias de sistema`](Fase%202/Evidencias%20Proyecto/Evidencias%20de%20sistema) |
 
+### Fase 3 · Presentación final
+
+| Documento | Tipo | Ubicación |
+|---|---|---|
+| Diario de reflexión 3.1 y autoevaluación 3.2 | Individual | [`Fase 3/Evidencias Individuales`](Fase%203/Evidencias%20Individuales) |
+| Presentación final, diapositivas en PDF (3.2) y transcripción del video (3.2) | Grupal | [`Fase 3/Evidencias Grupales`](Fase%203/Evidencias%20Grupales) |
+| **Video de la presentación (3.2), 8:11** | Grupal | **[Ver en Google Drive](https://drive.google.com/file/d/1RhXZhv4OZEq1M9CZ6LWt7KvjdvLr2Z9R/view?usp=drive_link)** |
+
+> El video pesa 150 MB y GitHub no acepta archivos de más de 100 MB, por eso está enlazado y no en el repositorio.
+
 ---
 
 ## Estructura del repositorio
@@ -169,6 +179,9 @@ proyecto-capstone-acredittia-administracion/
 │       └── Evidencias de sistema/
 │           ├── Aplicación/
 │           └── Base de datos/
+├── Fase 3/
+│   ├── Evidencias Individuales/           Apellido_Nombre_3.x_APT122_...
+│   └── Evidencias Grupales/               Presentación final, PDF y transcripción del video (3.2)
 └── README.md
 ```
 
