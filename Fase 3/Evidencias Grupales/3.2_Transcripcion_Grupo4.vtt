@@ -1,0 +1,580 @@
+WEBVTT
+
+NOTE Presentación Fase 3 (3.2) · Grupo 4 · Acredittia Administración del Negocio · 8:11
+NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nombres y términos mal reconocidos.
+
+1
+00:00:00.690 --> 00:00:07.290
+<v Jean Arriagada>Buenos días, somos el Grupo 4 de Ingeniería en Informática y hoy presentamos Acredittia, Administración del Negocio.
+
+2
+00:00:08.230 --> 00:00:12.810
+<v Jean Arriagada>Mi nombre es Jean Arriagada y trabajé junto a David Martínez en el módulo de Administración.
+
+3
+00:00:13.670 --> 00:00:17.830
+<v Jean Arriagada>David también estuvo a cargo de la integración como también de despliegue de la aplicación,
+
+4
+00:00:18.510 --> 00:00:21.510
+<v Jean Arriagada>mientras que Oscar Bustamante se enfocó en suscripciones y los pagos.
+
+5
+00:00:22.650 --> 00:00:26.310
+<v Jean Arriagada>Acredittia es una plataforma para acreditar las empresas contratistas del sector minero.
+
+6
+00:00:26.310 --> 00:00:33.930
+<v Jean Arriagada>El problema era que la aprobación de las empresas como también la cobranza de las suscripciones y el control de la morosidad se realizaban de manera manual.
+
+7
+00:00:34.970 --> 00:00:44.310
+<v Jean Arriagada>A medida que aumentaba la cantidad de los clientes, este proceso no escala, genera demoras y dificulta mantener un control adecuado del negocio.
+
+8
+00:00:45.390 --> 00:00:46.750
+<v Jean Arriagada>Solución, propuesta y objetivos.
+
+9
+00:00:47.350 --> 00:00:50.890
+<v Jean Arriagada>Nuestra solución es el backoffice de Acredittia y tiene cuatro piezas principales.
+
+10
+00:00:51.610 --> 00:00:56.210
+<v Jean Arriagada>Primero, una consola interna para aprobar empresas.
+
+11
+00:00:56.750 --> 00:00:59.390
+<v Jean Arriagada>Revisar la salud de los clientes y auditar los accesos.
+
+12
+00:01:00.210 --> 00:01:06.210
+<v Jean Arriagada>Segundo, un cobro automático que genera facturas en UF, concilia los pagos y detecta la morosidad.
+
+13
+00:01:06.910 --> 00:01:08.910
+<v Jean Arriagada>Tercero, un bloqueo de solo lectura.
+
+14
+00:01:09.130 --> 00:01:15.350
+<v Jean Arriagada>Después de siete días de gracia, una empresa morosa puede consultar sus datos, pero no modificarlos hasta regularizar su deuda.
+
+15
+00:01:16.010 --> 00:01:21.150
+<v Jean Arriagada>Y cuarto, un módulo enchufable que se integra sin modificar el código de los contratistas.
+
+16
+00:01:21.730 --> 00:01:25.190
+<v Jean Arriagada>Ahora, si miramos la tabla de la izquierda, nuestro objetivo general fue integrar el program,
+
+17
+00:01:25.710 --> 00:01:26.030
+<v Jean Arriagada>¿cómo?
+
+18
+00:01:26.310 --> 00:01:33.310
+<v Jean Arriagada>El backend, del módulo a la plataforma, y los cinco objetivos específicos que están aquí, están marcados como logrados.
+
+19
+00:01:33.930 --> 00:01:42.630
+<v Jean Arriagada>Como evidencia, tenemos el modelo de datos versionado con versión 7, con las 45 tablas, y el aislamiento por empresa.
+
+20
+00:01:43.650 --> 00:01:53.390
+<v Jean Arriagada>También tenemos la API administrativa con auditoría, el ciclo de suscripciones, y morosidad de las interfaces de consola, el portal,
+
+21
+00:01:53.390 --> 00:01:56.290
+<v Jean Arriagada>y las pruebas junto al despliegue.
+
+22
+00:01:56.310 --> 00:02:06.310
+<v Jean Arriagada>Una aclaración importante es que utilizamos una pasarela de pago simulada porque, más que nada, el mandante no entregó las credenciales de una real.
+
+23
+00:02:07.810 --> 00:02:09.230
+<v Jean Arriagada>Metodología y planificación.
+
+24
+00:02:10.150 --> 00:02:13.130
+<v Jean Arriagada>Para organizarnos, utilizamos un Scrum adaptado.
+
+25
+00:02:13.570 --> 00:02:19.190
+<v Jean Arriagada>Trabajamos en sprints de dos semanas, con seguimiento de semanal y ramas separadas para las funcionalidades.
+
+26
+00:02:19.750 --> 00:02:26.190
+<v Jean Arriagada>En esta línea de tiempo, podemos comparar lo que comprometimos inicialmente en la parte superior con lo que realmente fuimos ejecutando.
+
+27
+00:02:26.310 --> 00:02:31.310
+<v Jean Arriagada>En la parte inferior, partimos con la propuesta y el modelo de datos.
+
+28
+00:02:32.530 --> 00:02:39.010
+<v Jean Arriagada>Después avanzamos hacia el MVP, como después empezamos con el despliegue de la nube y la integración.
+
+29
+00:02:39.790 --> 00:02:46.290
+<v Jean Arriagada>Como se puede ver, también tuvimos algunos ajustes durante el desarrollo, pero logramos mantener los hitos principales de la planificación.
+
+30
+00:02:47.250 --> 00:02:49.790
+<v Jean Arriagada>En la parte inferior, mostramos tres decisiones importantes.
+
+31
+00:02:49.790 --> 00:02:56.290
+<v Jean Arriagada>La primera fue utilizar una pasarela simulada porque no recibimos las credenciales de pago.
+
+32
+00:02:56.310 --> 00:03:04.290
+<v Jean Arriagada>La segunda fue desarrollar un módulo enchufable para que pudiera integrarse sin modificar la plataforma original.
+
+33
+00:03:04.990 --> 00:03:08.210
+<v Jean Arriagada>Y la tercera fue realizar el despliegue en dos etapas.
+
+34
+00:03:08.730 --> 00:03:14.150
+<v Jean Arriagada>Primero con Ngrok para demostrar el MVP y después con Azure y Vercel.
+
+35
+00:03:15.030 --> 00:03:19.290
+<v Jean Arriagada>Estas decisiones nos permiten seguir avanzando y cumplir con los objetivos del proyecto.
+
+36
+00:03:19.810 --> 00:03:24.490
+<v Jean Arriagada>Ahora David, le vas a explicar un poco cómo construimos técnicamente esta solución.
+
+37
+00:03:25.230 --> 00:03:26.290
+<v David Martinez>Bueno, y aquí vamos avanzando.
+
+38
+00:03:26.310 --> 00:03:28.310
+<v David Martinez>Vamos a hablar sobre la arquitectura y el modelo de datos.
+
+39
+00:03:28.810 --> 00:03:30.150
+<v David Martinez>La arquitectura tiene tres capas.
+
+40
+00:03:30.470 --> 00:03:35.750
+<v David Martinez>El usuario entra del navegador al frontend en Next.js, publicado en Vercel.
+
+41
+00:03:36.030 --> 00:03:41.570
+<v David Martinez>Luego Vercel reenvía las llamadas de la API al backend que corre en Azure Container Apps, en cuatro contenedores.
+
+42
+00:03:42.090 --> 00:03:45.970
+<v David Martinez>La API en FastAPI, un worker de Celery que ejecuta los trabajos en segundo plano,
+
+43
+00:03:46.270 --> 00:03:48.910
+<v David Martinez>beat, que dispara las tareas programadas, como el cobro diario,
+
+44
+00:03:49.290 --> 00:03:51.430
+<v David Martinez>y un job de migración que aplica el esquema de la base.
+
+45
+00:03:51.570 --> 00:03:56.230
+<v David Martinez>La API y el worker se comunican por una cola en Redis y la pasarela de pago avisa por webhook.
+
+46
+00:03:56.310 --> 00:04:01.310
+<v David Martinez>Los datos están en PostgreSQL 16, con el esquema en su versión 7 y 45 tablas.
+
+47
+00:04:01.310 --> 00:04:03.310
+<v David Martinez>A la derecha está la parte del modelo que hicimos.
+
+48
+00:04:03.310 --> 00:04:05.310
+<v David Martinez>Cada empresa tiene una suscripción.
+
+49
+00:04:05.310 --> 00:04:09.310
+<v David Martinez>Esa suscripción pertenece a un plan con un precio en UF y genera sus facturas.
+
+50
+00:04:09.310 --> 00:04:12.310
+<v David Martinez>Y la tabla de actividad guarda la auditoría, que no se puede modificar.
+
+51
+00:04:12.310 --> 00:04:15.310
+<v David Martinez>Lo más importante es el aislamiento entre empresas.
+
+52
+00:04:15.310 --> 00:04:20.310
+<v David Martinez>Usamos Row-Level Security de PostgreSQL, donde la API se conecta con un usuario sin privilegio
+
+53
+00:04:20.310 --> 00:04:23.310
+<v David Martinez>y la propia base filtra cada consulta por empresa.
+
+54
+00:04:23.310 --> 00:04:25.310
+<v David Martinez>Así que, aunque el código tenga un error, una empresa nunca ve los datos.
+
+55
+00:04:25.310 --> 00:04:26.310
+<v David Martinez>Así que, aunque el código tenga un error, una empresa nunca ve los datos.
+
+56
+00:04:26.310 --> 00:04:28.310
+<v David Martinez>Esto cumple con el objetivo 1.
+
+57
+00:04:28.310 --> 00:04:33.310
+<v David Martinez>Además, el esquema se versiona con scripts numerados y la API no arranca si la versión no coincide.
+
+58
+00:04:33.310 --> 00:04:39.310
+<v David Martinez>Ok, aquí vamos a mostrar un caso de uso donde una empresa morosa recupera su cuenta pagando una deuda.
+
+59
+00:04:39.310 --> 00:04:45.310
+<v David Martinez>Aquí estamos en la versión más real y se puede observar que en la consola, en el apartado de suscripción y pagos,
+
+60
+00:04:45.310 --> 00:04:49.310
+<v David Martinez>está Maestranza Los Andes, morosa y en solo lectura.
+
+61
+00:04:49.310 --> 00:04:55.310
+<v David Martinez>Luego, en Auditoría, queda registrado cada acceso, como el ingreso que acabamos de hacer recién,
+
+62
+00:04:55.310 --> 00:04:56.310
+<v David Martinez>a la página.
+
+63
+00:04:56.310 --> 00:05:00.310
+<v David Martinez>Esto demuestra los objetivos 2, 3 y 4.
+
+64
+00:05:00.310 --> 00:05:04.310
+<v Oscar Bustamante>Ahora estoy en el portal como la empresa Maestranza Los Andes.
+
+65
+00:05:04.310 --> 00:05:06.310
+<v Oscar Bustamante>Lo primero que ves es este aviso.
+
+66
+00:05:06.310 --> 00:05:09.310
+<v Oscar Bustamante>Tiene una factura vencida y pasaron los 7 días de gracia.
+
+67
+00:05:09.310 --> 00:05:11.310
+<v Oscar Bustamante>Así que su cuenta está en solo lectura.
+
+68
+00:05:11.310 --> 00:05:14.310
+<v Oscar Bustamante>Puede consultar todo, pero no modificar.
+
+69
+00:05:14.310 --> 00:05:20.310
+<v Oscar Bustamante>Por ejemplo, si intento agregar un trabajador, el sistema lo rechaza y explica que la suscripción está en solo lectura.
+
+70
+00:05:20.310 --> 00:05:23.310
+<v Oscar Bustamante>Este bloqueo lo aplica el backend en cada escritura.
+
+71
+00:05:23.310 --> 00:05:24.310
+<v Oscar Bustamante>No solo la pantalla.
+
+72
+00:05:24.310 --> 00:05:27.310
+<v Oscar Bustamante>Esto demuestra el objetivo 3.
+
+73
+00:05:27.310 --> 00:05:30.310
+<v Oscar Bustamante>Para salir de esto, la empresa entra a suscripción.
+
+74
+00:05:30.310 --> 00:05:33.310
+<v Oscar Bustamante>Aquí ves su plan, el periodo y sus facturas.
+
+75
+00:05:33.310 --> 00:05:35.310
+<v Oscar Bustamante>La vencida está marcada.
+
+76
+00:05:35.310 --> 00:05:36.310
+<v Oscar Bustamante>La pagamos.
+
+77
+00:05:36.310 --> 00:05:41.310
+<v Oscar Bustamante>Usamos una pasarela simulada porque no recibimos credenciales de una real.
+
+78
+00:05:41.310 --> 00:05:48.310
+<v Oscar Bustamante>Pero el pago pasa por la misma conciliación que usará el webhook de la pasarela.
+
+79
+00:05:48.310 --> 00:05:52.310
+<v Oscar Bustamante>Este es el único punto del sistema que marca una factura como pagada.
+
+80
+00:05:52.310 --> 00:05:54.310
+<v Oscar Bustamante>Como ves, la factura ya está pagada.
+
+81
+00:05:54.310 --> 00:05:55.310
+<v Oscar Bustamante>La página aparece pagada.
+
+82
+00:05:55.310 --> 00:05:57.310
+<v Oscar Bustamante>También es parte del objetivo 3.
+
+83
+00:05:57.310 --> 00:06:01.310
+<v Oscar Bustamante>Al pagar la cuenta, vuelve a operar al instante.
+
+84
+00:06:01.310 --> 00:06:05.310
+<v Oscar Bustamante>El aviso desapareció y la empresa puede volver a modificar sus datos.
+
+85
+00:06:05.310 --> 00:06:07.310
+<v Oscar Bustamante>Y en la consola.
+
+86
+00:06:07.310 --> 00:06:09.310
+<v Oscar Bustamante>Suscripciones y pagos.
+
+87
+00:06:09.310 --> 00:06:11.310
+<v Oscar Bustamante>Maestranza Los Andes ya aparece activa.
+
+88
+00:06:11.310 --> 00:06:13.310
+<v Oscar Bustamante>Esto demuestra los objetivos 3 y 4.
+
+89
+00:06:13.310 --> 00:06:17.310
+<v Oscar Bustamante>Y como todo corre con Azure y Vercel, también el objetivo 5.
+
+90
+00:06:17.310 --> 00:06:20.310
+<v David Martinez>Bueno, todo lo que vieron está respaldado por pruebas automatizadas.
+
+91
+00:06:20.310 --> 00:06:22.310
+<v David Martinez>Tenemos una suite de pytest que corre sobre un PostgreSQL real.
+
+92
+00:06:22.310 --> 00:06:23.310
+<v David Martinez>Con las siguientes.
+
+93
+00:06:23.310 --> 00:06:25.310
+<v David Martinez>Con la seguridad de la empresa activa.
+
+94
+00:06:25.310 --> 00:06:28.310
+<v David Martinez>Son 366 casos y todos aprueban.
+
+95
+00:06:28.310 --> 00:06:31.310
+<v David Martinez>La última ejecución completa fue el 17 de noviembre.
+
+96
+00:06:31.310 --> 00:06:34.310
+<v David Martinez>Además, hicimos dos controles de calidad.
+
+97
+00:06:34.310 --> 00:06:36.310
+<v David Martinez>Que encontraron 27 hallazgos.
+
+98
+00:06:36.310 --> 00:06:38.310
+<v David Martinez>Corregimos 23 en 5 rondas.
+
+99
+00:06:38.310 --> 00:06:41.310
+<v David Martinez>Y los otros 4 quedaron documentados como pendientes.
+
+100
+00:06:41.310 --> 00:06:44.310
+<v David Martinez>También revisamos pantalla por pantalla contra los requerimientos.
+
+101
+00:06:44.310 --> 00:06:47.310
+<v David Martinez>Las pruebas nos llevaron a mejorar el producto.
+
+102
+00:06:47.310 --> 00:06:51.310
+<v David Martinez>Por ejemplo, una empresa morosa podía cancelar su suscripción para escapar del bloqueo.
+
+103
+00:06:51.310 --> 00:06:53.310
+<v David Martinez>Y ahora el sistema lo impide.
+
+104
+00:06:53.310 --> 00:06:57.310
+<v David Martinez>Y la pantalla Usuarios por plan mostraba al día a empresas que debían.
+
+105
+00:06:57.310 --> 00:06:59.310
+<v David Martinez>Ahora muestra su estado real.
+
+106
+00:06:59.310 --> 00:07:02.310
+<v David Martinez>Con esto se cumple el objetivo 5.
+
+107
+00:07:02.310 --> 00:07:06.310
+<v David Martinez>Luego, en el proyecto aplicamos las 4 competencias de la carrera.
+
+108
+00:07:06.310 --> 00:07:08.310
+<v David Martinez>Prueba de certificación.
+
+109
+00:07:08.310 --> 00:07:10.310
+<v David Martinez>Diseñamos y aplicamos la suite.
+
+110
+00:07:10.310 --> 00:07:12.310
+<v David Martinez>Y corregimos el producto con sus resultados.
+
+111
+00:07:12.310 --> 00:07:14.310
+<v David Martinez>Como acabo de mostrar.
+
+112
+00:07:14.310 --> 00:07:15.310
+<v David Martinez>Gestión de proyecto.
+
+113
+00:07:15.310 --> 00:07:19.310
+<v David Martinez>Donde planificamos con hitos y evaluamos una alternativa ante cada dificultad.
+
+114
+00:07:19.310 --> 00:07:20.310
+<v David Martinez>Como explicó Jean.
+
+115
+00:07:20.310 --> 00:07:21.310
+<v David Martinez>Modelos de datos.
+
+116
+00:07:21.310 --> 00:07:23.310
+<v David Martinez>Diseñamos e implementamos el esquema de versiones.
+
+117
+00:07:23.310 --> 00:07:25.310
+<v David Martinez>La versión 7 con aislamiento por empresa.
+
+118
+00:07:25.310 --> 00:07:26.310
+<v David Martinez>Y solución de software.
+
+119
+00:07:26.310 --> 00:07:28.310
+<v David Martinez>Construimos e integramos.
+
+120
+00:07:28.310 --> 00:07:30.310
+<v David Martinez>Y desplegamos el módulo en la nube.
+
+121
+00:07:30.310 --> 00:07:32.310
+<v David Martinez>Que es lo que vieron en la demo.
+
+122
+00:07:32.310 --> 00:07:34.310
+<v Oscar Bustamante>Para cerrar.
+
+123
+00:07:34.310 --> 00:07:35.310
+<v Oscar Bustamante>Tres conclusiones.
+
+124
+00:07:35.310 --> 00:07:37.310
+<v Oscar Bustamante>El módulo funciona en la nube.
+
+125
+00:07:37.310 --> 00:07:38.310
+<v Oscar Bustamante>Con el backend en Azure.
+
+126
+00:07:38.310 --> 00:07:40.310
+<v Oscar Bustamante>Y el frontend en Vercel.
+
+127
+00:07:40.310 --> 00:07:42.310
+<v Oscar Bustamante>Cumple 11 de los 15 requerimientos.
+
+128
+00:07:42.310 --> 00:07:43.310
+<v Oscar Bustamante>Quedan 3 parciales.
+
+129
+00:07:43.310 --> 00:07:45.310
+<v Oscar Bustamante>Que son el tiempo de uso.
+
+130
+00:07:45.310 --> 00:07:46.310
+<v Oscar Bustamante>El PDF de las facturas.
+
+131
+00:07:46.310 --> 00:07:47.310
+<v Oscar Bustamante>Y la pasarela real.
+
+132
+00:07:47.310 --> 00:07:49.310
+<v Oscar Bustamante>Y uno pendiente.
+
+133
+00:07:49.310 --> 00:07:50.310
+<v Oscar Bustamante>La notificación por correo.
+
+134
+00:07:50.310 --> 00:07:52.310
+<v Oscar Bustamante>Y su calidad está verificada.
+
+135
+00:07:52.310 --> 00:07:55.310
+<v Oscar Bustamante>Con 366 pruebas aprobadas.
+
+136
+00:07:55.310 --> 00:07:57.310
+<v Oscar Bustamante>Y 23 de 27 hallazgos corregidos.
+
+137
+00:07:57.310 --> 00:08:00.310
+<v Oscar Bustamante>El próximo paso es entregar a Alloxentric.
+
+138
+00:08:00.310 --> 00:08:01.310
+<v Oscar Bustamante>El código.
+
+139
+00:08:01.310 --> 00:08:02.310
+<v Oscar Bustamante>Los contenedores.
+
+140
+00:08:02.310 --> 00:08:03.310
+<v Oscar Bustamante>Y los 4 manuales.
+
+141
+00:08:03.310 --> 00:08:06.310
+<v Oscar Bustamante>Que ya están publicados en el repositorio de entrega.
+
+142
+00:08:06.310 --> 00:08:07.310
+<v Oscar Bustamante>Y resolver lo pendiente.
+
+143
+00:08:07.310 --> 00:08:08.310
+<v Oscar Bustamante>Muchas gracias.
+
+144
+00:08:08.310 --> 00:08:10.310
+<v Oscar Bustamante>Quedamos atentos a sus preguntas.
