@@ -1,7 +1,7 @@
 WEBVTT
 
-NOTE Presentación Fase 3 (3.2) · Grupo 4 · Acredittia Administración del Negocio · 8:11
-NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nombres y términos mal reconocidos.
+NOTE Presentación Fase 3 (3.2) · Grupo 4 · Acredittia Administración del Negocio · duración 8:11
+NOTE Tiempos de Whisper large-v3. El texto de David Martinez y Oscar Bustamante sigue el guion del equipo donde coincide con lo dicho; el de Jean Arriagada es lo que dijo, con nombres y términos corregidos.
 
 1
 00:00:00.690 --> 00:00:07.290
@@ -17,7 +17,7 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 4
 00:00:18.510 --> 00:00:21.510
-<v Jean Arriagada>mientras que Oscar Bustamante se enfocó en suscripciones y los pagos.
+<v Jean Arriagada>Mientras que Oscar Bustamante se enfocó en suscripciones y los pagos.
 
 5
 00:00:22.650 --> 00:00:26.310
@@ -85,7 +85,7 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 21
 00:01:53.390 --> 00:01:56.290
-<v Jean Arriagada>y las pruebas junto al despliegue.
+<v Jean Arriagada>Y las pruebas junto al despliegue.
 
 22
 00:01:56.310 --> 00:02:06.310
@@ -161,7 +161,7 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 40
 00:03:30.470 --> 00:03:35.750
-<v David Martinez>El usuario entra del navegador al frontend en Next.js, publicado en Vercel.
+<v David Martinez>El usuario entra desde el navegador al frontend en Next.js, publicado en Vercel.
 
 41
 00:03:36.030 --> 00:03:41.570
@@ -169,19 +169,19 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 42
 00:03:42.090 --> 00:03:45.970
-<v David Martinez>La API en FastAPI, un worker de Celery que ejecuta los trabajos en segundo plano,
+<v David Martinez>La API en FastAPI; un worker de Celery que ejecuta los trabajos en segundo plano;
 
 43
 00:03:46.270 --> 00:03:48.910
-<v David Martinez>beat, que dispara las tareas programadas, como el cobro diario,
+<v David Martinez>Beat, que dispara las tareas programadas, como el cobro diario;
 
 44
 00:03:49.290 --> 00:03:51.430
-<v David Martinez>y un job de migración que aplica el esquema de la base.
+<v David Martinez>Y un job de migración que aplica el esquema de la base.
 
 45
 00:03:51.570 --> 00:03:56.230
-<v David Martinez>La API y el worker se comunican por una cola en Redis y la pasarela de pago avisa por webhook.
+<v David Martinez>La API y el worker se comunican por una cola en Redis, y la pasarela de pagos avisa por webhook.
 
 46
 00:03:56.310 --> 00:04:01.310
@@ -189,19 +189,19 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 47
 00:04:01.310 --> 00:04:03.310
-<v David Martinez>A la derecha está la parte del modelo que hicimos.
+<v David Martinez>A la derecha está la parte del modelo que hicimos:
 
 48
 00:04:03.310 --> 00:04:05.310
-<v David Martinez>Cada empresa tiene una suscripción.
+<v David Martinez>Cada empresa tiene una suscripción,
 
 49
 00:04:05.310 --> 00:04:09.310
-<v David Martinez>Esa suscripción pertenece a un plan con un precio en UF y genera sus facturas.
+<v David Martinez>Esa suscripción pertenece a un plan con precio en UF y genera facturas;
 
 50
 00:04:09.310 --> 00:04:12.310
-<v David Martinez>Y la tabla de actividad guarda la auditoría, que no se puede modificar.
+<v David Martinez>Y la tabla actividad guarda la auditoría, que no se puede modificar.
 
 51
 00:04:12.310 --> 00:04:15.310
@@ -209,15 +209,15 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 52
 00:04:15.310 --> 00:04:20.310
-<v David Martinez>Usamos Row-Level Security de PostgreSQL, donde la API se conecta con un usuario sin privilegio
+<v David Martinez>Usamos Row-Level Security de PostgreSQL: la API se conecta con un usuario sin privilegios,
 
 53
 00:04:20.310 --> 00:04:23.310
-<v David Martinez>y la propia base filtra cada consulta por empresa.
+<v David Martinez>Y la propia base filtra cada consulta por empresa.
 
 54
 00:04:23.310 --> 00:04:25.310
-<v David Martinez>Así que, aunque el código tenga un error, una empresa nunca ve los datos.
+<v David Martinez>Así, aunque el código tenga un error, una empresa nunca ve los datos
 
 55
 00:04:25.310 --> 00:04:26.310
@@ -241,15 +241,15 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 60
 00:04:45.310 --> 00:04:49.310
-<v David Martinez>está Maestranza Los Andes, morosa y en solo lectura.
+<v David Martinez>Está Maestranza Los Andes, morosa y en solo lectura.
 
 61
 00:04:49.310 --> 00:04:55.310
-<v David Martinez>Luego, en Auditoría, queda registrado cada acceso, como el ingreso que acabamos de hacer recién,
+<v David Martinez>Y aquí, en Auditoría, queda registrado cada acceso, como el ingreso que acabo de hacer.
 
 62
 00:04:55.310 --> 00:04:56.310
-<v David Martinez>a la página.
+<v David Martinez>A la página.
 
 63
 00:04:56.310 --> 00:05:00.310
@@ -257,15 +257,15 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 64
 00:05:00.310 --> 00:05:04.310
-<v Oscar Bustamante>Ahora estoy en el portal como la empresa Maestranza Los Andes.
+<v Oscar Bustamante>Ahora estoy en el portal, como la empresa Maestranza Los Andes.
 
 65
 00:05:04.310 --> 00:05:06.310
-<v Oscar Bustamante>Lo primero que ves es este aviso.
+<v Oscar Bustamante>Lo primero que ve es este aviso:
 
 66
 00:05:06.310 --> 00:05:09.310
-<v Oscar Bustamante>Tiene una factura vencida y pasaron los 7 días de gracia.
+<v Oscar Bustamante>Tiene una factura vencida y pasaron los 7 días de gracia,
 
 67
 00:05:09.310 --> 00:05:11.310
@@ -281,7 +281,7 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 70
 00:05:20.310 --> 00:05:23.310
-<v Oscar Bustamante>Este bloqueo lo aplica el backend en cada escritura.
+<v Oscar Bustamante>Este bloqueo lo aplica el backend en cada escritura,
 
 71
 00:05:23.310 --> 00:05:24.310
@@ -293,11 +293,11 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 73
 00:05:27.310 --> 00:05:30.310
-<v Oscar Bustamante>Para salir de esto, la empresa entra a suscripción.
+<v Oscar Bustamante>Para salir de esto, la empresa entra a Suscripción.
 
 74
 00:05:30.310 --> 00:05:33.310
-<v Oscar Bustamante>Aquí ves su plan, el periodo y sus facturas.
+<v Oscar Bustamante>Aquí ve su plan, el periodo y sus facturas;
 
 75
 00:05:33.310 --> 00:05:35.310
@@ -309,15 +309,15 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 77
 00:05:36.310 --> 00:05:41.310
-<v Oscar Bustamante>Usamos una pasarela simulada porque no recibimos credenciales de una real.
+<v Oscar Bustamante>Usamos una pasarela simulada, porque no recibimos credenciales de una real,
 
 78
 00:05:41.310 --> 00:05:48.310
-<v Oscar Bustamante>Pero el pago pasa por la misma conciliación que usará el webhook de la pasarela.
+<v Oscar Bustamante>Pero el pago pasa por la misma conciliación que usará el webhook de la pasarela
 
 79
 00:05:48.310 --> 00:05:52.310
-<v Oscar Bustamante>Este es el único punto del sistema que marca una factura como pagada.
+<v Oscar Bustamante>Real; es el único punto del sistema que marca una factura como pagada.
 
 80
 00:05:52.310 --> 00:05:54.310
@@ -333,7 +333,7 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 83
 00:05:57.310 --> 00:06:01.310
-<v Oscar Bustamante>Al pagar la cuenta, vuelve a operar al instante.
+<v Oscar Bustamante>Al pagar, la cuenta vuelve a operar al instante:
 
 84
 00:06:01.310 --> 00:06:05.310
@@ -341,11 +341,11 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 85
 00:06:05.310 --> 00:06:07.310
-<v Oscar Bustamante>Y en la consola.
+<v Oscar Bustamante>Y en la consola,
 
 86
 00:06:07.310 --> 00:06:09.310
-<v Oscar Bustamante>Suscripciones y pagos.
+<v Oscar Bustamante>Suscripciones y pagos,
 
 87
 00:06:09.310 --> 00:06:11.310
@@ -353,19 +353,19 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 88
 00:06:11.310 --> 00:06:13.310
-<v Oscar Bustamante>Esto demuestra los objetivos 3 y 4.
+<v Oscar Bustamante>Esto demuestra los objetivos 3 y 4,
 
 89
 00:06:13.310 --> 00:06:17.310
-<v Oscar Bustamante>Y como todo corre con Azure y Vercel, también el objetivo 5.
+<v Oscar Bustamante>Y como todo corre en Azure y Vercel, también el objetivo 5.
 
 90
 00:06:17.310 --> 00:06:20.310
-<v David Martinez>Bueno, todo lo que vieron está respaldado por pruebas automatizadas.
+<v David Martinez>Todo lo que vieron está respaldado por pruebas automatizadas.
 
 91
 00:06:20.310 --> 00:06:22.310
-<v David Martinez>Tenemos una suite de pytest que corre sobre un PostgreSQL real.
+<v David Martinez>Tenemos una suite de pytest que corre sobre un PostgreSQL real,
 
 92
 00:06:22.310 --> 00:06:23.310
@@ -377,7 +377,7 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 94
 00:06:25.310 --> 00:06:28.310
-<v David Martinez>Son 366 casos y todos aprueban.
+<v David Martinez>Son 366 casos y todos aprueban;
 
 95
 00:06:28.310 --> 00:06:31.310
@@ -385,19 +385,19 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 96
 00:06:31.310 --> 00:06:34.310
-<v David Martinez>Además, hicimos dos controles de calidad.
+<v David Martinez>Además hicimos dos controles de calidad,
 
 97
 00:06:34.310 --> 00:06:36.310
-<v David Martinez>Que encontraron 27 hallazgos.
+<v David Martinez>Que encontraron 27 hallazgos:
 
 98
 00:06:36.310 --> 00:06:38.310
-<v David Martinez>Corregimos 23 en 5 rondas.
+<v David Martinez>Corregimos 23 en cinco rondas
 
 99
 00:06:38.310 --> 00:06:41.310
-<v David Martinez>Y los otros 4 quedaron documentados como pendientes.
+<v David Martinez>Y los otros cuatro quedaron documentados como pendientes.
 
 100
 00:06:41.310 --> 00:06:44.310
@@ -409,7 +409,7 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 102
 00:06:47.310 --> 00:06:51.310
-<v David Martinez>Por ejemplo, una empresa morosa podía cancelar su suscripción para escapar del bloqueo.
+<v David Martinez>Dos ejemplos: una empresa morosa podía cancelar su suscripción para escapar del bloqueo,
 
 103
 00:06:51.310 --> 00:06:53.310
@@ -417,7 +417,7 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 104
 00:06:53.310 --> 00:06:57.310
-<v David Martinez>Y la pantalla Usuarios por plan mostraba al día a empresas que debían.
+<v David Martinez>Y la pantalla Usuarios por plan mostraba al día a empresas que debían;
 
 105
 00:06:57.310 --> 00:06:59.310
@@ -429,19 +429,19 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 107
 00:07:02.310 --> 00:07:06.310
-<v David Martinez>Luego, en el proyecto aplicamos las 4 competencias de la carrera.
+<v David Martinez>En el proyecto aplicamos las cuatro competencias de la carrera.
 
 108
 00:07:06.310 --> 00:07:08.310
-<v David Martinez>Prueba de certificación.
+<v David Martinez>Pruebas de certificación:
 
 109
 00:07:08.310 --> 00:07:10.310
-<v David Martinez>Diseñamos y aplicamos la suite.
+<v David Martinez>Diseñamos y aplicamos la suite
 
 110
 00:07:10.310 --> 00:07:12.310
-<v David Martinez>Y corregimos el producto con sus resultados.
+<v David Martinez>Y corregimos el producto con sus resultados,
 
 111
 00:07:12.310 --> 00:07:14.310
@@ -449,7 +449,7 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 112
 00:07:14.310 --> 00:07:15.310
-<v David Martinez>Gestión de proyecto.
+<v David Martinez>Gestión de proyectos:
 
 113
 00:07:15.310 --> 00:07:19.310
@@ -461,7 +461,7 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 115
 00:07:20.310 --> 00:07:21.310
-<v David Martinez>Modelos de datos.
+<v David Martinez>Modelos de datos:
 
 116
 00:07:21.310 --> 00:07:23.310
@@ -469,11 +469,11 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 117
 00:07:23.310 --> 00:07:25.310
-<v David Martinez>La versión 7 con aislamiento por empresa.
+<v David Martinez>Versión 7 con aislamiento por empresa.
 
 118
 00:07:25.310 --> 00:07:26.310
-<v David Martinez>Y solución de software.
+<v David Martinez>Y solución de software:
 
 119
 00:07:26.310 --> 00:07:28.310
@@ -481,7 +481,7 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 120
 00:07:28.310 --> 00:07:30.310
-<v David Martinez>Y desplegamos el módulo en la nube.
+<v David Martinez>Y desplegamos el módulo en la nube,
 
 121
 00:07:30.310 --> 00:07:32.310
@@ -489,7 +489,7 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 122
 00:07:32.310 --> 00:07:34.310
-<v Oscar Bustamante>Para cerrar.
+<v Oscar Bustamante>Para cerrar,
 
 123
 00:07:34.310 --> 00:07:35.310
@@ -497,11 +497,11 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 124
 00:07:35.310 --> 00:07:37.310
-<v Oscar Bustamante>El módulo funciona en la nube.
+<v Oscar Bustamante>El módulo funciona en la nube,
 
 125
 00:07:37.310 --> 00:07:38.310
-<v Oscar Bustamante>Con el backend en Azure.
+<v Oscar Bustamante>Con el backend en Azure
 
 126
 00:07:38.310 --> 00:07:40.310
@@ -509,27 +509,27 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 127
 00:07:40.310 --> 00:07:42.310
-<v Oscar Bustamante>Cumple 11 de los 15 requerimientos.
+<v Oscar Bustamante>Cumple 11 de los 15 requerimientos:
 
 128
 00:07:42.310 --> 00:07:43.310
-<v Oscar Bustamante>Quedan 3 parciales.
+<v Oscar Bustamante>Quedan tres parciales,
 
 129
 00:07:43.310 --> 00:07:45.310
-<v Oscar Bustamante>Que son el tiempo de uso.
+<v Oscar Bustamante>Que son el tiempo de uso,
 
 130
 00:07:45.310 --> 00:07:46.310
-<v Oscar Bustamante>El PDF de las facturas.
+<v Oscar Bustamante>El PDF de las facturas
 
 131
 00:07:46.310 --> 00:07:47.310
-<v Oscar Bustamante>Y la pasarela real.
+<v Oscar Bustamante>Y la pasarela real,
 
 132
 00:07:47.310 --> 00:07:49.310
-<v Oscar Bustamante>Y uno pendiente.
+<v Oscar Bustamante>Y uno pendiente,
 
 133
 00:07:49.310 --> 00:07:50.310
@@ -537,7 +537,7 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 134
 00:07:50.310 --> 00:07:52.310
-<v Oscar Bustamante>Y su calidad está verificada.
+<v Oscar Bustamante>Y su calidad está verificada:
 
 135
 00:07:52.310 --> 00:07:55.310
@@ -549,23 +549,23 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 137
 00:07:57.310 --> 00:08:00.310
-<v Oscar Bustamante>El próximo paso es entregar a Alloxentric.
+<v Oscar Bustamante>El próximo paso es entregar a Alloxentric
 
 138
 00:08:00.310 --> 00:08:01.310
-<v Oscar Bustamante>El código.
+<v Oscar Bustamante>El código,
 
 139
 00:08:01.310 --> 00:08:02.310
-<v Oscar Bustamante>Los contenedores.
+<v Oscar Bustamante>Los contenedores
 
 140
 00:08:02.310 --> 00:08:03.310
-<v Oscar Bustamante>Y los 4 manuales.
+<v Oscar Bustamante>Y los cuatro manuales,
 
 141
 00:08:03.310 --> 00:08:06.310
-<v Oscar Bustamante>Que ya están publicados en el repositorio de entrega.
+<v Oscar Bustamante>Que ya están publicados en el repositorio de entrega,
 
 142
 00:08:06.310 --> 00:08:07.310
@@ -573,7 +573,7 @@ NOTE Transcripción automática (Whisper large-v3) revisada: se corrigieron nomb
 
 143
 00:08:07.310 --> 00:08:08.310
-<v Oscar Bustamante>Muchas gracias.
+<v Oscar Bustamante>Muchas gracias;
 
 144
 00:08:08.310 --> 00:08:10.310
