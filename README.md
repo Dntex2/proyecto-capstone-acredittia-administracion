@@ -7,7 +7,7 @@
 Backoffice de una plataforma SaaS que acredita a empresas contratistas en faenas mineras:
 consola interna de administración, suscripciones, pagos y control de morosidad.
 
-![Fase](https://img.shields.io/badge/fase%20actual-Fase%202-1F3864)
+![Fase](https://img.shields.io/badge/fase%20actual-Fase%203-1F3864)
 ![Pruebas](https://img.shields.io/badge/pruebas-366%20casos-2E7D32)
 ![Requerimientos](https://img.shields.io/badge/requerimientos-11%20de%2015-F9A825)
 ![Stack](https://img.shields.io/badge/stack-FastAPI%20%C2%B7%20PostgreSQL%20%C2%B7%20Next.js-2B41B5)
@@ -83,8 +83,8 @@ pasa la suite de pruebas.
 | Fase | Semanas | Estado |
 |---|---|---|
 | Fase 1 · Definición del proyecto | S1 a S4 | ✅ Completada |
-| Fase 2 · Desarrollo del proyecto | S5 a S15 | 🔄 En curso (MVP entregado en la semana 9; módulo integrado y desplegado en la nube) |
-| Fase 3 · Presentación final | S16 a S18 | ⏳ Pendiente |
+| Fase 2 · Desarrollo del proyecto | S5 a S15 | ✅ Completada (MVP en la semana 9; módulo integrado, desplegado en la nube y documentado) |
+| Fase 3 · Presentación final | S16 a S18 | 🔄 En curso (presentación grabada y autoevaluación 3.2; falta la exposición ante la comisión) |
 
 **Hitos de verificación**
 
@@ -95,7 +95,7 @@ pasa la suite de pruebas.
 | H2 | S9 | MVP desplegado (Hito 1 del mandante) | ✅ Cumplido (publicado con Ngrok) |
 | H3 | S11 | Plataforma en Docker y desplegada en la nube | ✅ Cumplido (backend en Azure, frontend en Vercel) |
 | H4 | S13 | Sistema integrado y probado | ✅ Cumplido (cinco rondas de control de calidad, todas fusionadas en `main`) |
-| H5 | S15 | Proyecto documentado (Hito 3 del mandante) | 🔄 En curso (documentación técnica y de integración en el repositorio de entrega; manuales pendientes) |
+| H5 | S15 | Proyecto documentado (Hito 3 del mandante) | ✅ Cumplido (manuales de usuario, administrador y desarrollo y modelo de datos publicados en el repositorio de entrega el 17-11-2026) |
 | H6 | S18 | Proyecto presentado | ⏳ Pendiente |
 
 **Lo que ya funciona (actualizado al 29 de octubre de 2026)**
